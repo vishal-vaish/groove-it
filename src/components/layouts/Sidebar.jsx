@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {Fragment, useEffect, useMemo, useState} from "react";
 import {classNames} from "../../lib/utils.js";
@@ -9,7 +8,7 @@ import {Tooltip} from "../Tooltip.jsx";
 import Icon from "../Icon.jsx";
 import Title from "../headers/Title.jsx";
 import Button from "../buttons/Button.jsx";
-import NavListSkeleton from "../skeletons/NavlistSkeleton.jsx";
+import NavListSkeleton from "../skeletons/NavListSkeleton.jsx";
 import {useLogout} from "../../lib/action/auth.action.js";
 import {defaultThemeConfig, themeConfig} from "../../config/theme.config.js";
 
@@ -25,7 +24,7 @@ const User = () => {
      >
        <div className="w-10 h-10 rounded-full flex_justify_center bg-sidebar">
          {imageUrl ? (
-            <img src={imageUrl} className="w-full h-full rounded-full"/>
+            <img src={imageUrl} className="w-full h-full rounded-full" alt=""/>
          ) : (
             <Icon name="FaRegUser" size={16}/>
          )}
